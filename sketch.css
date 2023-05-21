@@ -1,0 +1,108 @@
+body{
+  background-color: #e6e6ff;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  align-items: center;
+}
+
+.grid {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background-color:#ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .grid-element {
+    user-select: none;
+  }
+
+  /* Sliding Bar */
+
+.sizeBar{
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ffffff;
+  height: 10px;
+  border: 1px solid #8080ff;
+  border-radius: 25px;
+}
+
+.sizeBar::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #8080ff;
+  cursor: pointer;
+}
+
+
+/* Color Picker */
+
+.colorBar:active{
+  transition: transform 0.05s ease-in-out;
+  transform: scale(1);
+}
+
+.colorBar{
+  -webkit-appearance: none;
+  width: 80px;
+  height: 80px;
+  border: none;
+  background-color: #e6e6ff;
+  
+}
+
+.colorBar::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.colorBar::-webkit-color-swatch {
+  border: none;
+  border-radius: 50px;
+  box-shadow: rgba(255, 255, 255, 0.544) 0px 3px 8px;
+}
+
+button,
+input {
+  width: 100%;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+  margin: 10px;
+}
+
+button{
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #9999ff;
+  color:#ffffff;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.grid-element {
+  user-select: none;
+}
+
+.active{
+  background-color: rgb(62, 46, 83);
+}
